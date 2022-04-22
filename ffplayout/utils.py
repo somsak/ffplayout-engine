@@ -644,7 +644,7 @@ class MediaProbe:
 
         if self.src and self.src.split('://')[0] in self.remote_source:
             url = self.src.split('://')
-            self.src = f'{url[0]}://{urllib.parse.quote(url[1])}'
+            #self.src = f'{url[0]}://{urllib.parse.quote(url[1])}'
             self.is_remote = True
         else:
             self.is_remote = False
